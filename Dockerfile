@@ -1,7 +1,7 @@
 FROM ubuntu:24.04
 
 ENV DEBIAN_FRONTEND=noninteractive
-ENV RUNNER_VERSION="2.321.0"
+ENV RUNNER_VERSION="2.337.0"
 
 # Herramientas del sistema, dependencias del runner y Python toolchain
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -10,6 +10,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     git \
     jq \
     sudo \
+    lsb-release \
     python3 \
     python3-pip \
     python3-venv \
