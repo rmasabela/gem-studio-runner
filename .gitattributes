@@ -1,0 +1,7 @@
+# Forzar siempre terminaciones Unix (LF) en scripts shell y Dockerfile
+*.sh text eol=lf
+Dockerfile text eol=lf
+entrypoint.sh text eol=lf
+
+# Dejar que Git maneje automáticamente otros archivos de texto
+* text=auto
